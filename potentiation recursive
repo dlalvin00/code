@@ -1,0 +1,17 @@
+#Recursive function
+
+def potenciarec (base, expoente):
+    if expoente == 1:
+         return base        
+    resultado = base * potenciarec(base, expoente-1)
+    return resultado
+
+#---------------------//------------------------------#
+# main function #
+
+base = int(input('informe a base'))
+exp  = int(input('informe o expoente'))
+
+print('o resultado é: ', potenciarec(base, exp))
+
+# end developed by Dã Lael #
